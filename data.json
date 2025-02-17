@@ -1,0 +1,67 @@
+[
+    {
+        "_id": "67b18a5c019d539628357b2f",
+        "sensor_id": "SENSOR_YL-69",
+        "ubicacion": {
+            "latitud": 21.40383,
+            "longitud": -103.1112
+        },
+        "lectura": {
+            "temperatura": 19,
+            "humedad": 55
+        },
+        "timestamp": 1739688539586
+    },
+    {
+        "_id": "67b189df019d539628357b2d",
+        "sensor_id": "SENSOR_YL-69",
+        "ubicacion": {
+            "latitud": 21.40383,
+            "longitud": -103.1112
+        },
+        "lectura": {
+            "temperatura": 19,
+            "humedad": 55
+        },
+        "timestamp": 1739688414664
+    },
+    {
+        "_id": "67b18a9d019d539628357b30",
+        "sensor_id": "SENSOR_YL-69",
+        "ubicacion": {
+            "latitud": 21.40383,
+            "longitud": -103.1112
+        },
+        "lectura": {
+            "temperatura": 19,
+            "humedad": 55
+        },
+        "timestamp": 1739688603903
+    },
+    {
+        "_id": "672aeeff5f17897b09c0c2a1",
+        "sensor_id": "sensor_002",
+        "ubicacion": {
+            "latitud": 19.5,
+            "longitud": -99.1332
+        },
+        "lectura": {
+            "temperatura": 24,
+            "humedad": 58
+        },
+        "timestamp": 1728036300000
+    },
+    {
+        "_id": "672aeb58e9bdcc2510b0827f",
+        "sensor_id": "sensor_001",
+        "ubicacion": {
+            "latitud": 19.4326,
+            "longitud": -99.1332
+        },
+        "lectura": {
+            "temperatura": 23.5,
+            "humedad": 55
+        },
+        "timestamp": 1728036000000
+    }
+]

@@ -11,6 +11,15 @@ app.use(bodyParser.json());
 // ruta para recibir datos de la ESP32 mediante POST
 app.post("/api/humedad", async (req, res) => {
     try {
+        const horaESP = req.body.hora_local;
+        const fechaServidor = new Date(); // Fecha actual del servidor
+
+        //timestamp final
+        const yyyy = fechaServidor.getFullYear();
+        const mm = String(fechaServidor.getMonth() + 1).padStart(2, "0");
+        const dd = String(fechaServidor.getDate()).padStart(2, "0");
+
+        const fechaHoraISO = `${yyyy}-${mm}-${dd}T${horaESP}`;
         //estructura los datos recibidos desde el ESP32 a formato que recibe mongoDB
         const datos = {
             sensor_id: req.body.sensor_id,
@@ -22,7 +31,7 @@ app.post("/api/humedad", async (req, res) => {
                 temperatura: req.body.lectura.temperatura,
                 humedad: req.body.lectura.humedad
             },
-            timestamp: new Date() // Se usa la hora del servidor
+            timestamp: new Date(fechaHoraISO) // Se usa la hora del servidor
         };
 
         await insertarPost(datos); // Guardamos los datos en MongoDB

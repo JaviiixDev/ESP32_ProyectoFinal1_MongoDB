@@ -2,7 +2,7 @@
 const { MongoClient } = require("mongodb");
 
 // uri de conexión a MongoDB  
-const uri = "ESCRIBE-TU-URI";
+const uri = "YOUR-URI";
 
 // Creamos una instancia de MongoClient utilizando la URI proporcionada
 const client = new MongoClient(uri);
